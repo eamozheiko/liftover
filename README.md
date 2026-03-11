@@ -1,16 +1,15 @@
-# SNP Liftover Workflow
+# VCF Liftover Workflow
 
-A Snakemake workflow for lifting SNP/variant coordinates from one genome assembly version to another.
+A Snakemake workflow for lifting VCF coordinates from one genome assembly version to another.
 
 The workflow performs:
 
-1. alignment of the source and target reference genomes with minimap2
-2. conversion of the alignment from PAF to CHAIN
-3. liftover of variants from the input VCF using CrossMap
-4. sorting and indexing of the lifted VCF
-5. generation of a summary report with variant counts and runtime statistics
+1. Alignment of the source and target reference genomes with minimap2
+2. Conversion of the alignment from PAF to CHAIN
+3. Liftover of variants from the input VCF using CrossMap
+4. Sorting and indexing of the lifted VCF
+5. Generation of a summary report with variant counts and runtime statistics
 
----
 
 ## Workflow overview
 
@@ -25,7 +24,6 @@ Main output:
 - lifted and indexed VCF on the target genome
 - summary report with liftover statistics
 
----
 
 ## Requirements
 
@@ -40,17 +38,13 @@ Tools used:
 - CrossMap
 - tabix
 
----
 
 ## Run workflow
-
+'''
 snakemake --snakefile Snakefile --configfile config.yaml --cores 24 --use-conda --printshellcmds
+'''
 
----
-
-## Output
-
-<outdir>/<from_version>_to_<to_version>/
+## Output Structure
 
 alignment/
 - aln.paf
@@ -61,35 +55,12 @@ vcf/
 - lifted.vcf.gz.tbi
 
 report/
-- total_input_variants.txt
 - liftover_summary.tsv
 
 benchmark/
 - rule benchmark files
 
----
-
-## Summary report
-
-The report contains:
-
-- total_variant_count
-- lifted_variant_count
-- dropped_variant_count
-- dropped_percent
-- total_runtime_sec
-- max_memory_mb
-
----
-
-## Notes
-
-Temporary files are created using `mktemp` and removed automatically.
-
-The workflow uses `set -euo pipefail` to ensure robust shell execution.
-
----
 
 ## Cite
 
-If you use this code please cite https://github.com/eamozheiko/liftover/
+If you use this code, please cite https://github.com/eamozheiko/liftover/
