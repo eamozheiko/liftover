@@ -34,8 +34,8 @@ This workflow requires the following software:
 
 Tools Used:
 
-- [bcftools](https://samtools.github.io/bcftools/)
-- [minimap2](https://github.com/lh3/minimap2)
+- [BCFtools](https://samtools.github.io/bcftools/)
+- [Minimap2](https://github.com/lh3/minimap2)
 - [paf2chain](https://github.com/AndreaGuarracino/paf2chain)
 - [CrossMap](https://crossmap.readthedocs.io)
 - [tabix](https://www.htslib.org/doc/tabix.html)
