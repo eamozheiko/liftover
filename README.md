@@ -40,9 +40,9 @@ Tools used:
 
 
 ## Run workflow
-'''
+```bash
 snakemake --snakefile Snakefile --configfile config.yaml --cores 24 --use-conda --printshellcmds
-'''
+```bash
 
 ## Output Structure
 
@@ -61,6 +61,8 @@ benchmark/
 - rule benchmark files
 
 
-## Cite
+--------
 
-If you use this code, please cite https://github.com/eamozheiko/liftover/
+If you use Mixit in your research, the most relevant link to cite is:
+
+* https://github.com/eamozheiko/liftover/
