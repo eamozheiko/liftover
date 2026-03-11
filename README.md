@@ -27,22 +27,24 @@ Main output:
 
 ## Requirements
 
-- Snakemake
-- Conda or Mamba
+This workflow requires the following software:
 
-Tools used:
+- [Snakemake](https://snakemake.readthedocs.io)
+- [Conda](https://docs.conda.io)
 
-- bcftools
-- minimap2
-- paf2chain
-- CrossMap
-- tabix
+Tools Used:
+
+- [bcftools](https://samtools.github.io/bcftools/)
+- [minimap2](https://github.com/lh3/minimap2)
+- [paf2chain](https://github.com/AndreaGuarracino/paf2chain)
+- [CrossMap](https://crossmap.readthedocs.io)
+- [tabix](https://www.htslib.org/doc/tabix.html)
 
 
 ## Run workflow
 ```bash
 snakemake --snakefile Snakefile --configfile config.yaml --cores 24 --use-conda --printshellcmds
-```bash
+```
 
 ## Output Structure
 
@@ -60,7 +62,7 @@ report/
 benchmark/
 - rule benchmark files
 
-
+Citation
 --------
 
 If you use Mixit in your research, the most relevant link to cite is:
