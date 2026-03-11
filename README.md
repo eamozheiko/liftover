@@ -35,7 +35,7 @@ This workflow requires the following software:
 Tools Used:
 
 - [BCFtools=1.22](https://samtools.github.io/bcftools/)
-- [Minimap2=2.30-r1287](https://github.com/lh3/minimap2)
+- [Minimap2=2.30](https://github.com/lh3/minimap2)
 - [paf2chain=0.1.1](https://github.com/AndreaGuarracino/paf2chain)
 - [CrossMap=0.7.3](https://crossmap.readthedocs.io)
 
