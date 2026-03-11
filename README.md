@@ -64,6 +64,6 @@ benchmark/
 Citation
 --------
 
-If you use Mixit in your research, the most relevant link to cite is:
+If you use Liftover in your research, the most relevant link to cite is:
 
 * https://github.com/eamozheiko/liftover/
