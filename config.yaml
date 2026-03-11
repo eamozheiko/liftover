@@ -1,0 +1,19 @@
+data_dir: "/hdd-data/tesla_analysis/eamozheiko/data/test1"
+outdir: "/hdd-data/tesla_analysis/eamozheiko/data/test1/out4"
+
+genomes:
+  from_version: "glyma.Wm82.gnm1.FCtY"
+  to_version: "GCA_030864155.1_ASM3086415v1"
+
+reference:
+  fasta_from: "/hdd-data/tesla_analysis/eamozheiko/data/test1/glyma.Wm82.gnm1.FCtY.genome_main.fna.gz"
+  fasta_to: "/hdd-data/tesla_analysis/eamozheiko/data/test1/GCA_030864155.1_ASM3086415v1_genomic.fna.gz"
+
+variants:
+  vcf: "/hdd-data/tesla_analysis/eamozheiko/data/test1/glyma.Wm82.gnm1.div.Hu_Zhang_2020.SNPdata.vcf.gz"
+
+liftover:
+  ref_consistent: false
+
+resources:
+  threads_minimap2: 20
