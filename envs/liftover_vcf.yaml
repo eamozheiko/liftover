@@ -2,5 +2,5 @@ channels:
   - bioconda
   - conda-forge
 dependencies:
-  - crossmap
-  - bcftools
+  - crossmap=0.7.3
+  - bcftools=1.22
