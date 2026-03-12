@@ -17,8 +17,8 @@ REF_CONSISTENT="false"
 FROM_VERSION="glyma.Wm82.gnm1.FCtY"
 TO_VERSION="GCA_030864155.1_ASM3086415v1"
 
-ALIGN_IMAGE="liftover-align-chain:1.0"
-LIFT_IMAGE="liftover-vcf:1.0"
+ALIGN_IMAGE="eamozheiko/liftover-align-chain:1.0"
+LIFT_IMAGE="eamozheiko/liftover-vcf:1.0"
 
 # Host path mounted into containers
 DOCKER_MOUNT_SRC="/hdd-data"
